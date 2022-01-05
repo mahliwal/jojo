@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thank You</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+    </head>
+    <body>
+        <h2>Thank You!!!</h2>
+        Thank you for your inquiry. A 4 digit verification number has been sent to your phone number, please enter in the following box and submit for confirmation<br><br>
+        <form name="myform" onsubmit="return getOTP()">
+            <div class="formdesign" id="otp">
+            OTP:<input class="otp" type="number">
+            </div>
+            <input class="button" type="submit" value="Validate">
+        </form>
+    </body>
+    <script>
+       var validate=document.forms['myform']["otp"];
+       var val = Math.floor(1000 + Math.random() * 9000);
+       console.log(val);
+       function getOTP()
+       {
+           if(!validate.value.match(val))
+          {
+              alert("Page not found 404");
+              return false;
+          }
+          return true;
+       }
+    </script>
+    </html>

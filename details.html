@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jyoti</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	
+	<h2> Personal Details Page  </h2>
+ 
+	<form name="myform" onsubmit="return validation()" action="thank.html" >
+
+	    <div class="formdesign" id="name">
+		Name:<input type="text" name="username" required><b> <span id="error"></span></b>
+		</div>
+
+	    <div class="formdesign" id="email">
+		Email:<input type="email" name="femail" required>
+		</div>
+	
+	    <div class="formdesign" id="phone" required>
+		Phone:<span class="custom-select"> <select>
+			<option value="0">Select No:</option>
+			<option value="1">Reliance</option>
+			<option value="2">Idea</option>
+			<option value="3">Vodaphone</option>
+		</select></span><input type="phone" name="fphone"> <span id="err"></span><br><br>
+	</div>
+
+		<input class="but" type="submit" value="Submit">
+
+	   </form>
+	
+</body>
+<script src="java.js"></script>
